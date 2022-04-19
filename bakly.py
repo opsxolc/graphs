@@ -62,7 +62,7 @@ class Graph:
 
         print(self.num_V, m * n)
 
-g = Graph()
+# g = Graph()
 
-arr = input().split()
-g.generate(float(arr[0]), *map(int, arr[1:]))
+# arr = input().split()
+# g.generate(float(arr[0]), *map(int, arr[1:]))
