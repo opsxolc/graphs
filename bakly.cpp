@@ -92,13 +92,14 @@ int main(int argc, char** argv) {
     int n, m;
     double a;
 
-    try {
-        sscanf(argv[1], "%d", &n);
-        sscanf(argv[2], "%d", &m);
-        sscanf(argv[3], "%lf", &a);
-    } catch(...) {
-        std::cout << "Error reading parameters, try again: n, m, a\n";
+    if (argc < 4) {
+        std::cout << "Wrong number of patameters, try again: n, m, a\n";
+        return 1;
     }
+
+    sscanf(argv[1], "%d", &n);
+    sscanf(argv[2], "%d", &m);
+    sscanf(argv[3], "%lf", &a);
 
     Graph g(n, m, a);
     g.print("graph.txt");
