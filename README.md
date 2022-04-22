@@ -9,5 +9,5 @@ make
 
 To view plot for graph.txt run
 ```
-python3 plot.py
+make plot
 ```
