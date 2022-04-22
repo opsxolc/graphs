@@ -16,11 +16,6 @@ class Graph {
     void add_edge(int* degries, int from, int to) {
         degries[from]++;
         degries[to]++;
-
-        // for (int i = 0; i < n * m; ++i)
-            // std::cout << ((i == to)?1:0) << " ";
-        // std::cout << "\\" << std::endl;
-
         matrix[from/m][to/m] += 1;
     }
 
